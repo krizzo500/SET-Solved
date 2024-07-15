@@ -10,6 +10,7 @@
 #import "OpenCVWrapper.h"
 #import <opencv2/imgcodecs/ios.h>
 #import <UIKit/UIKit.h>
+#import "CardFinder.hpp"
 
 using namespace cv;
 
@@ -34,20 +35,23 @@ using namespace cv;
 }
 
 + (UIImage *)detectEdgesInRGBImage:(UIImage *)image {
-//    cv::Mat mat;
-//    UIImageToMat(image, mat);
-//    cv::Mat gray;
-//    cv::cvtColor(mat, gray, cv::COLOR_BGR2GRAY);
-////    cv::Laplacian(gray, gray, gray.depth());
-//    cv::Sobel(gray, gray, gray.depth(), 1, 0);
-//    UIImage *grayscale = MatToUIImage(gray);
-//    return grayscale;
-    Mat org;
-    mat gray;
-    Mat blur;
-    Mat thresh;
+    cv::Mat org;
+    cv::Mat edges;
+
+    // Convert UIImage to cv::Mat
+    UIImageToMat(image, org);
     
+    // Call the C++ helper function
+    edges = detectEdgesInRGBImage(org);
+    
+
+    // Convert cv::Mat back to UIImage
+    UIImage *resultImage = MatToUIImage(edges);
+
+    return resultImage;
 }
+
+
 
 + (UIImage *)blur:(UIImage *)image radius:(double)radius {
     cv::Mat mat;

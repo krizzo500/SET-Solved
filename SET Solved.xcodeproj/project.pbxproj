@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AC8DCD52C40286E00081C74 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC8DCD42C40286E00081C74 /* opencv2.framework */; };
+		4AC8DCD92C40A10500081C74 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC8DCD82C40A10500081C74 /* opencv2.framework */; };
+		4AC8DCDC2C44370A00081C74 /* CardFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8DCDA2C4430C300081C74 /* CardFinder.cpp */; };
 		9A60433021B06B2100E86479 /* ProcessImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60432F21B06B2100E86479 /* ProcessImageController.swift */; };
 		9A60433321B0891000E86479 /* extension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60433221B0891000E86479 /* extension_UIImage.swift */; };
 		9AAE17FB21ADA8EE00A6FCA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE17FA21ADA8EE00A6FCA8 /* AppDelegate.swift */; };
@@ -24,7 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AC8DCD42C40286E00081C74 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "/Users/karlrizzo/SET Solved/opencv2.framework"; sourceTree = "<absolute>"; };
+		4AC8DCD82C40A10500081C74 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		4AC8DCDA2C4430C300081C74 /* CardFinder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CardFinder.cpp; sourceTree = "<group>"; };
+		4AC8DCDB2C4430C300081C74 /* CardFinder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardFinder.hpp; sourceTree = "<group>"; };
 		9A60432F21B06B2100E86479 /* ProcessImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessImageController.swift; sourceTree = "<group>"; };
 		9A60433221B0891000E86479 /* extension_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_UIImage.swift; sourceTree = "<group>"; };
 		9AAE17F721ADA8EE00A6FCA8 /* SET Solved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SET Solved.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC8DCD52C40286E00081C74 /* opencv2.framework in Frameworks */,
+				4AC8DCD92C40A10500081C74 /* opencv2.framework in Frameworks */,
 				9AAE181421ADA9BD00A6FCA8 /* CoreFoundation.framework in Frameworks */,
 				9AAE181521ADA9BD00A6FCA8 /* Accelerate.framework in Frameworks */,
 				9AAE181621ADA9BD00A6FCA8 /* CoreGraphics.framework in Frameworks */,
@@ -65,9 +68,11 @@
 		9AAE17EE21ADA8EE00A6FCA8 = {
 			isa = PBXGroup;
 			children = (
-				4AC8DCD42C40286E00081C74 /* opencv2.framework */,
+				4AC8DCD82C40A10500081C74 /* opencv2.framework */,
 				9AAE181A21ADAA3900A6FCA8 /* OpenCVWrapper.h */,
 				9AAE181B21ADAA3900A6FCA8 /* OpenCVWrapper.mm */,
+				4AC8DCDB2C4430C300081C74 /* CardFinder.hpp */,
+				4AC8DCDA2C4430C300081C74 /* CardFinder.cpp */,
 				9AAE181D21ADAAA800A6FCA8 /* PrefixHeader.pch */,
 				9AAE17F921ADA8EE00A6FCA8 /* SET Solved */,
 				9AAE17F821ADA8EE00A6FCA8 /* Products */,
@@ -184,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC8DCDC2C44370A00081C74 /* CardFinder.cpp in Sources */,
 				9AAE17FD21ADA8EE00A6FCA8 /* TakePhotoController.swift in Sources */,
 				9A60433021B06B2100E86479 /* ProcessImageController.swift in Sources */,
 				9AAE17FB21ADA8EE00A6FCA8 /* AppDelegate.swift in Sources */,
