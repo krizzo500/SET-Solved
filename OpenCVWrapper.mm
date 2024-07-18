@@ -56,9 +56,8 @@ using namespace cv;
 + (UIImage *)blur:(UIImage *)image radius:(double)radius {
     cv::Mat mat;
     UIImageToMat(image, mat);
-    cv::GaussianBlur(mat, mat, cv::Size(NULL, NULL), radius);
-    UIImage *blurredImage = MatToUIImage(mat);
-    return blurredImage;
+    UIImage *Image = MatToUIImage(mat);
+    return Image;
 }
 
 + (UIImage *)getChannel:(UIImage *)image channel:(NSString *)channel {

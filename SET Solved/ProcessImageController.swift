@@ -24,7 +24,8 @@ class ProcessImageController: UIViewController {
                 showImage(image: OpenCVWrapper.detectEdges(inRGBImage: img.normalized!))
             case 2: // blur
                 // the OpenCV blur is significantly slower (like 5x slower)
-                showImage(image: self.blurImage(with: img.normalized!, radius: 20.0))
+                //showImage(image: self.blurImage(with: img.normalized!, radius: 20.0))
+                showImage(image: OpenCVWrapper.blur(img.normalized!, radius: 20.0))
             case 3: // red channel
                 showImage(image: OpenCVWrapper.getChannel(img.normalized!, channel: "R"))
             default:
