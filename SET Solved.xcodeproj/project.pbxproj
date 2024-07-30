@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		4AC8DCD92C40A10500081C74 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC8DCD82C40A10500081C74 /* opencv2.framework */; };
 		4AC8DCDC2C44370A00081C74 /* CardFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8DCDA2C4430C300081C74 /* CardFinder.cpp */; };
+		4AC8DCE02C52BD7200081C74 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8DCDF2C52BD7200081C74 /* PracticeViewController.swift */; };
+		4AC8DCE22C53113900081C74 /* PhotoTaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8DCE12C53113900081C74 /* PhotoTaking.swift */; };
 		9A60433021B06B2100E86479 /* ProcessImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60432F21B06B2100E86479 /* ProcessImageController.swift */; };
 		9A60433321B0891000E86479 /* extension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60433221B0891000E86479 /* extension_UIImage.swift */; };
 		9AAE17FB21ADA8EE00A6FCA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE17FA21ADA8EE00A6FCA8 /* AppDelegate.swift */; };
-		9AAE17FD21ADA8EE00A6FCA8 /* TakePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE17FC21ADA8EE00A6FCA8 /* TakePhotoController.swift */; };
+		9AAE17FD21ADA8EE00A6FCA8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE17FC21ADA8EE00A6FCA8 /* HomeController.swift */; };
 		9AAE180021ADA8EE00A6FCA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE17FE21ADA8EE00A6FCA8 /* Main.storyboard */; };
 		9AAE180221ADA8EF00A6FCA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE180121ADA8EF00A6FCA8 /* Assets.xcassets */; };
 		9AAE180521ADA8EF00A6FCA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE180321ADA8EF00A6FCA8 /* LaunchScreen.storyboard */; };
@@ -28,11 +30,13 @@
 		4AC8DCD82C40A10500081C74 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		4AC8DCDA2C4430C300081C74 /* CardFinder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CardFinder.cpp; sourceTree = "<group>"; };
 		4AC8DCDB2C4430C300081C74 /* CardFinder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardFinder.hpp; sourceTree = "<group>"; };
+		4AC8DCDF2C52BD7200081C74 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		4AC8DCE12C53113900081C74 /* PhotoTaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTaking.swift; sourceTree = "<group>"; };
 		9A60432F21B06B2100E86479 /* ProcessImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessImageController.swift; sourceTree = "<group>"; };
 		9A60433221B0891000E86479 /* extension_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_UIImage.swift; sourceTree = "<group>"; };
 		9AAE17F721ADA8EE00A6FCA8 /* SET Solved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SET Solved.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAE17FA21ADA8EE00A6FCA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AAE17FC21ADA8EE00A6FCA8 /* TakePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoController.swift; sourceTree = "<group>"; };
+		9AAE17FC21ADA8EE00A6FCA8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9AAE17FF21ADA8EE00A6FCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AAE180121ADA8EF00A6FCA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AAE180421ADA8EF00A6FCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,14 +96,16 @@
 		9AAE17F921ADA8EE00A6FCA8 /* SET Solved */ = {
 			isa = PBXGroup;
 			children = (
-				9A60432F21B06B2100E86479 /* ProcessImageController.swift */,
 				9AAE17FA21ADA8EE00A6FCA8 /* AppDelegate.swift */,
-				9AAE17FC21ADA8EE00A6FCA8 /* TakePhotoController.swift */,
+				9AAE17FC21ADA8EE00A6FCA8 /* HomeController.swift */,
+				9A60432F21B06B2100E86479 /* ProcessImageController.swift */,
+				4AC8DCDF2C52BD7200081C74 /* PracticeViewController.swift */,
 				9AAE17FE21ADA8EE00A6FCA8 /* Main.storyboard */,
 				9A60433221B0891000E86479 /* extension_UIImage.swift */,
 				9AAE180121ADA8EF00A6FCA8 /* Assets.xcassets */,
 				9AAE180321ADA8EF00A6FCA8 /* LaunchScreen.storyboard */,
 				9AAE180621ADA8EF00A6FCA8 /* Info.plist */,
+				4AC8DCE12C53113900081C74 /* PhotoTaking.swift */,
 			);
 			path = "SET Solved";
 			sourceTree = "<group>";
@@ -190,8 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC8DCDC2C44370A00081C74 /* CardFinder.cpp in Sources */,
-				9AAE17FD21ADA8EE00A6FCA8 /* TakePhotoController.swift in Sources */,
+				9AAE17FD21ADA8EE00A6FCA8 /* HomeController.swift in Sources */,
 				9A60433021B06B2100E86479 /* ProcessImageController.swift in Sources */,
+				4AC8DCE02C52BD7200081C74 /* PracticeViewController.swift in Sources */,
+				4AC8DCE22C53113900081C74 /* PhotoTaking.swift in Sources */,
 				9AAE17FB21ADA8EE00A6FCA8 /* AppDelegate.swift in Sources */,
 				9AAE181C21ADAA3900A6FCA8 /* OpenCVWrapper.mm in Sources */,
 				9A60433321B0891000E86479 /* extension_UIImage.swift in Sources */,
@@ -344,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LAGYU2752B;
@@ -370,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LAGYU2752B;

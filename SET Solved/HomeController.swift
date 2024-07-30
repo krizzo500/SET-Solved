@@ -9,7 +9,7 @@
 import UIKit
 import MobileCoreServices
 
-class TakePhotoController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class HomeController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,10 @@ class TakePhotoController: UIViewController, UIImagePickerControllerDelegate, UI
         didSet {
             photoButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         }
+    }
+    
+    @IBAction func Practice(_ sender: Any) {
+        print("hello lets practice")
     }
     
     @IBAction func takePhoto(_ sender: UIButton) {

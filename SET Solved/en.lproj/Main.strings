@@ -1,0 +1,27 @@
+
+/* Class = "UIBarButtonItem"; title = "Home"; ObjectID = "8ak-JE-Khd"; */
+"8ak-JE-Khd.title" = "Home";
+
+/* Class = "UIViewController"; title = "Take Photo"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Take Photo";
+
+/* Class = "UIButton"; normalTitle = "📷"; ObjectID = "LhO-MD-ATz"; */
+"LhO-MD-ATz.normalTitle" = "📷";
+
+/* Class = "UINavigationItem"; title = "Take Photo"; ObjectID = "VQa-4p-HoY"; */
+"VQa-4p-HoY.title" = "Take Photo";
+
+/* Class = "UINavigationItem"; title = "Process Image"; ObjectID = "YKf-Ab-Elc"; */
+"YKf-Ab-Elc.title" = "Process Image";
+
+/* Class = "UISegmentedControl"; ynO-GG-7Vi.segmentTitles[0] = "B&W"; ObjectID = "ynO-GG-7Vi"; */
+"ynO-GG-7Vi.segmentTitles[0]" = "B&W";
+
+/* Class = "UISegmentedControl"; ynO-GG-7Vi.segmentTitles[1] = "Edges"; ObjectID = "ynO-GG-7Vi"; */
+"ynO-GG-7Vi.segmentTitles[1]" = "Edges";
+
+/* Class = "UISegmentedControl"; ynO-GG-7Vi.segmentTitles[2] = "Blur"; ObjectID = "ynO-GG-7Vi"; */
+"ynO-GG-7Vi.segmentTitles[2]" = "Blur";
+
+/* Class = "UISegmentedControl"; ynO-GG-7Vi.segmentTitles[3] = "Red channel"; ObjectID = "ynO-GG-7Vi"; */
+"ynO-GG-7Vi.segmentTitles[3]" = "Red channel";
