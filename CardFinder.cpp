@@ -15,8 +15,8 @@
 using namespace cv;
 using namespace std;
 
-int THRESHOLD_MINIMUM = 160;
-int SHAPE_THRESHOLD_MINIMUM = 180;
+int THRESHOLD_MINIMUM = 180;
+int SHAPE_THRESHOLD_MINIMUM = 200;
 double CONTOUR_AREA_TOLERANCE = 2.0;
 
 
@@ -442,7 +442,7 @@ Mat findSets(const Mat& image, vector<tuple<vector<Point2f>, vector<int>>> cards
 
 Mat detectEdgesInRGBImage(const Mat& image) {
     Mat retImage = findSets(image, identifyCards(image));
-    
+////    
     return retImage;
     
     Mat gray;
@@ -453,14 +453,21 @@ Mat detectEdgesInRGBImage(const Mat& image) {
     threshold(blur, thresh, THRESHOLD_MINIMUM, 255, 0);
     return thresh;
 
-    vector<tuple<vector<Point2f>, Mat>> cards = findCards(image);
-    vector<Mat> shapes = findShapes(get<1>(cards[0]));
-    vector<tuple<vector<Point2f>, vector<int>>> card_types = identifyCards(image);
-    vector<int> attributes = get<1>(card_types[0]);
-    cout << "number: " << attributes[0] << " shape: " << attributes[1]
-    << " color: " << attributes[2] << " fill: " << attributes[3] << endl;
-    getColor(shapes[0]);
-    return shapes[0];
+//    vector<tuple<vector<Point2f>, Mat>> cards = findCards(image);
+//    vector<Mat> shapes = findShapes(get<1>(cards[0]));
+//    vector<tuple<vector<Point2f>, vector<int>>> card_types = identifyCards(image);
+//    vector<int> attributes = get<1>(card_types[0]);
+//    cout << "number: " << attributes[0] << " shape: " << attributes[1]
+//    << " color: " << attributes[2] << " fill: " << attributes[3] << endl;
+//    getColor(shapes[0]);
+//    Mat gray;
+//    Mat blur;
+//    Mat thresh;
+//    cvtColor(shapes[0], gray, cv::COLOR_BGR2GRAY);
+//    GaussianBlur(gray, blur, cv::Size(1, 1), 1000);
+//    threshold(blur, thresh, THRESHOLD_MINIMUM, 255, 0);
+//    return shapes[0];
+//    return get<1>(cards[0]);
 }
 
 

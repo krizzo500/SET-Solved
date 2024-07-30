@@ -89,10 +89,10 @@ class PracticeViewController: UIViewController {
                for button in selectedButtons {
                    let randomIndex = Int(arc4random_uniform(UInt32(cardImages.count)))
                    let randomImageName : String = cardImages[randomIndex]
-                   let attributes = [Int(getSubstring(from: randomImageName, start: 5, end:6)),
+                   let attributes = [Int(getSubstring(from: randomImageName, start: 4, end:5)),
+                                     Int(getSubstring(from: randomImageName, start: 5, end:6)),
                                      Int(getSubstring(from: randomImageName, start: 6, end:7)),
-                                     Int(getSubstring(from: randomImageName, start: 7, end:8)),
-                                     Int(getSubstring(from: randomImageName, start: 8, end:9))]
+                                     Int(getSubstring(from: randomImageName, start: 7, end:8))]
                    let nonOptionalAttributes: [Int] = attributes.compactMap { $0 }
 
                    cardImages.remove(at: randomIndex)
@@ -125,13 +125,12 @@ class PracticeViewController: UIViewController {
             attributes[i] = buttonTypes[button]!
             i += 1
         }
-        for j in 0...4{
+        for j in 0...3{
             if !((attributes[0][j] == attributes[1][j] && attributes[1][j] == attributes[2][j]) || (attributes[0][j] != attributes[1][j] && attributes[1][j] != attributes[2][j] && attributes[0][j] != attributes[2][j])){
                 return false
             }
-            return true
         }
-        return false
+        return true
     }
     
     func getBackgroundImageName(for button: UIButton) -> String? {
@@ -185,10 +184,10 @@ class PracticeViewController: UIViewController {
             for button in buttons {
                 let randomIndex = Int(arc4random_uniform(UInt32(cardImages.count)))
                 let randomImageName : String = cardImages[randomIndex]
-                var attributes = [Int(getSubstring(from: randomImageName, start: 5, end:6)),
+                var attributes = [Int(getSubstring(from: randomImageName, start: 4, end:5)),
+                                  Int(getSubstring(from: randomImageName, start: 5, end:6)),
                                   Int(getSubstring(from: randomImageName, start: 6, end:7)),
-                                  Int(getSubstring(from: randomImageName, start: 7, end:8)),
-                                  Int(getSubstring(from: randomImageName, start: 8, end:9))]
+                                  Int(getSubstring(from: randomImageName, start: 7, end:8))]
                 var nonOptionalAttributes: [Int] = attributes.compactMap { $0 }
 
                 cardImages.remove(at: randomIndex)
